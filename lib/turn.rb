@@ -36,7 +36,7 @@ def turn(board)
   input = gets.to_i
   input_to_index(input)
   while validate_move?(board, index) != true
-    puts "Please enter 1-9"
+    turn(board)
   end
     move(board, index, value = "X")
     display_board(board)
